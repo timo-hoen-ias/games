@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Timos Spiele</title>
-  <meta name="description" content="Browser-Spiele von Timo: Moll64, Warehouse Racing, Warehouse Fighter und Aschekrone.">
+  <meta name="description" content="Browser-Spiele von Timo: Moll64, Warehouse Racing, Warehouse Fighter, Aschekrone und Hochstapler.">
   <style>
     :root {
       --bg: #0f1117;
@@ -38,7 +38,7 @@
     header p { color: var(--muted); margin: 0; font-size: 1.1rem; }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
       gap: 20px;
     }
     .card {
@@ -88,6 +88,7 @@
     .moll     { --accent: #d6a75c; --grad: linear-gradient(135deg, #7c4a1e, #e0b46b); }
     .racing   { --accent: #fbbf24; --grad: linear-gradient(135deg, #b45309, #facc15); }
     .fighter  { --accent: #a78bfa; --grad: linear-gradient(135deg, #3b0764, #7c3aed 60%, #f43f5e); }
+    .stack    { --accent: #34d399; --grad: linear-gradient(135deg, #064e3b, #10b981 60%, #a3e635); }
     .ash      { --accent: #f87171; --grad: linear-gradient(135deg, #3f1d1d, #b91c1c 60%, #f97316); }
     footer { text-align: center; color: var(--muted); font-size: .9rem; margin-top: 56px; }
     @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
@@ -97,7 +98,7 @@
   <main>
     <header>
       <h1>🎮 Timos Spiele</h1>
-      <p>Vier Browser-Spiele, direkt spielbar. Such dir eins aus!</p>
+      <p>Fünf Browser-Spiele, direkt spielbar. Such dir eins aus!</p>
     </header>
 
     <section class="grid">
@@ -137,6 +138,16 @@
           <span class="genre">Action-RPG</span>
           <h2>Aschekrone</h2>
           <p>Kämpfe dich durch eine Welt aus Asche und Glut und hol dir die Krone.</p>
+          <span class="play">Jetzt spielen →</span>
+        </div>
+      </a>
+
+      <a class="card stack" href="https://hochstapler.hoen-timo.workers.dev/" target="_blank" rel="noopener">
+        <div class="banner" aria-hidden="true">📦</div>
+        <div class="body">
+          <span class="genre">Multiplayer</span>
+          <h2>Hochstapler</h2>
+          <p>Ein Multiplayer-Game, bei dem es nur nach oben geht!</p>
           <span class="play">Jetzt spielen →</span>
         </div>
       </a>
